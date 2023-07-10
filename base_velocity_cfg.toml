@@ -1,0 +1,10 @@
+# BASE VELOCITY CONFIG FOR YOKKAICHI-PLAYGROUND
+# Do not touch!
+
+bind = "CHANGEME_IP"
+motd = "CHANGEME_MOTD"
+show-max-players = 6969
+
+config-version = "2.6"
+online-mode = false
+show-ping-requests = true
