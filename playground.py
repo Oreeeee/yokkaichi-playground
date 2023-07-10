@@ -49,7 +49,9 @@ def create_servers(start_ip, end_ip, ports, base_cfg):
             shutil.copy(
                 "velocity.jar", f"servers/{dir_uuid}/"
             )  # Copy the Velocity JAR to the target dir
-            open(f"servers/{dir_uuid}/forwarding.secret", "w").close() # Create an empty forwarding.secret file (Velocity won't start without it)
+            open(
+                f"servers/{dir_uuid}/forwarding.secret", "w"
+            ).close()  # Create an empty forwarding.secret file (Velocity won't start without it)
 
             with open(
                 f"servers/{dir_uuid}/velocity.toml", "w"
