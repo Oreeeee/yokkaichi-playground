@@ -39,12 +39,10 @@ def create_servers(start_ip, end_ip, ports, base_cfg):
         ips.append(str(ip_address(i)))
 
     # Spawn the servers
-    uuids = []
     servers = []
     for ip in ips:
         for port in ports:
             dir_uuid = uuid.uuid4()  # Generate a random UUID for the server
-            uuids.append(dir_uuid)  # Add the UUID to the list
             os.mkdir(f"servers/{dir_uuid}")  # Create a directory for the server
             shutil.copy(
                 "velocity.jar", f"servers/{dir_uuid}/"
